@@ -6,7 +6,7 @@ const Articles = ({ articles, selectedTab }) => {
 
   return (
     articles.map(a =>
-      a.sectionId === selectedTab &&
+      (a.sectionId === selectedTab || selectedTab === "all") &&
       <a href={a.webUrl}>
       <button className="article-button">
       <div className="article-card-container" key={a.id}>

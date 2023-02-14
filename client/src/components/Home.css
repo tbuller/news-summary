@@ -3,3 +3,15 @@
   color: #B22222;
   padding-bottom: 50px;
 }
+
+.tab {
+  display: flex;
+  justify-content: center;
+  padding-left: 80px;
+}
+
+.tab-container {
+  display: flex;
+  padding-left: 550px;
+  align-items: center;
+}
