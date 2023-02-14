@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import apiKey from "../apiKey";
-import Article from "./Article";
+import Articles from "./Articles";
 
 
 
@@ -26,8 +26,9 @@ const Home = () => {
 
   return (
     <>
-    <Article articles={articles}/>
-    <button onClick={showArticles}>click</button>
+    <h1 className="welcome-message">Welcome to your news summary!</h1>
+    <Articles articles={articles}/>
+    <button onClick={showArticles()}>click</button>
     </>
   )
 }

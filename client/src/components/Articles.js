@@ -2,11 +2,12 @@ import React from 'react';
 import { useState } from 'react';
 import './Article.css';
 
-const Article = ({ articles }) => {
+const Articles = ({ articles }) => {
 
   return (
     articles.map(a =>
-      <div className="container-wrapper">
+      <a href={a.webUrl}>
+      <button className="article-button">
       <div className="article-card-container" key={a.id}>
       <div className="title-container">
       <div className="title">{a.webTitle}</div>
@@ -15,11 +16,12 @@ const Article = ({ articles }) => {
       <img src={a.fields.thumbnail}></img>
       </div>
       </div>
-      </div>
+      </button>
+      </a>
       )
     
   )
 
 }
 
-export default Article;
+export default Articles;
