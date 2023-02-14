@@ -1,3 +1,31 @@
 html * {
-  background-color: blue;
+  background-color: rgb(223, 214, 151);
+}
+
+img {
+  border-radius: 20px;
+}
+
+.container-wrapper {
+  justify-content: center;
+  width: 1000px;
+  border: 5px solid #B22222;
+  /* padding: 25px; */
+}
+
+.article-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.title-container {
+  width: 300px;
+  justify-content: center;
+}
+
+.title {
+  word-wrap: break-word;
 }
