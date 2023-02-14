@@ -2,11 +2,13 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import apiKey from "../apiKey";
 import Articles from "./Articles";
+import './Home.css';
 
 
 
 const Home = () => {
   const[articles, setArticles] = useState([]);
+  const[selectedTab, setSelectedTab] = useState("world");
 
   useEffect(() => {
     const fetchArticles = async () => {
@@ -27,8 +29,7 @@ const Home = () => {
   return (
     <>
     <h1 className="welcome-message">Welcome to your news summary!</h1>
-    <Articles articles={articles}/>
-    <button onClick={showArticles()}>click</button>
+    <Articles articles={articles} selectedTab={selectedTab} />
     </>
   )
 }

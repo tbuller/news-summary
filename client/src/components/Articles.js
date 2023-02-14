@@ -2,10 +2,11 @@ import React from 'react';
 import { useState } from 'react';
 import './Article.css';
 
-const Articles = ({ articles }) => {
+const Articles = ({ articles, selectedTab }) => {
 
   return (
     articles.map(a =>
+      a.sectionId === selectedTab &&
       <a href={a.webUrl}>
       <button className="article-button">
       <div className="article-card-container" key={a.id}>
